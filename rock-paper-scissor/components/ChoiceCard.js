@@ -1,16 +1,10 @@
-import React, { useState } from 'react';
-import {
-  Text,
-  View,
-  Image,
-  StyleSheet,
-  TouchableOpacity,
-} from 'react-native';
+// Author: Lauren Lofton
+import React from 'react';
+import { View, Image, StyleSheet } from 'react-native';
 
 const ChoiceCard = ({ choice: { uri }}) => {
     return (
       <View style={styles.choiceContainer}>
-    
         <Image
           source={{ uri }}
           resizeMode="contain"

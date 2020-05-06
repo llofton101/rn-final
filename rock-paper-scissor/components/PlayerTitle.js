@@ -1,3 +1,4 @@
+// Author: Lauren Lofton
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
 
@@ -13,11 +14,12 @@ const styles = StyleSheet.create({
         fontSize:30,
         fontWeight:'300',
         textAlign: 'center',
-        color: '#2bff47',
+        color: 'black',
         textShadowOffset: .5,
         textShadowOffset: {width: 1, height: 1},
         textShadowColor: 'black',
         textShadowRadius: 1,
+    
     }
 });
 

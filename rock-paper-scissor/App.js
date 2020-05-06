@@ -1,12 +1,9 @@
 // Author: Lauren Lofton
 import React, { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import GameScreen from './screens/GameScreen';
-
 import StartGameScreen from './screens/StartGameScreen';
-
-
 
 export default function App() {
   const [randomNumber, setRandomNumber] = useState();
@@ -24,8 +21,9 @@ export default function App() {
 
   return (
     <View style={styles.screen}>
-
+     
       {content}
+    
     </View>
   );
 }
@@ -33,6 +31,12 @@ export default function App() {
 const styles = StyleSheet.create({
   screen: {
     flex: 1
-  }
+  },
+  background: {
+    flex: 1,
+    resizeMode: "repeat",
+    justifyContent: "center",
+    backgroundColor: 'white'
+  },
   
 });

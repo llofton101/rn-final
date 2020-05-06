@@ -1,9 +1,10 @@
+// Author: Lauren Lofton
 import React from 'react';
-import { StyleSheet, Text, View, } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
 
 function GameStatus(props) {
     if (props.gamePrompt == 'You Won!') {
-        return <Text style={styles.textWin}>{props.gamePrompt}</Text>;
+      return <Text style={styles.textWin}>{props.gamePrompt}</Text>;
     }
     else if (props.gamePrompt == 'You Lost!') {
         return <Text style={styles.textLose}>{props.gamePrompt}</Text>;

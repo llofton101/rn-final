@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Rock Paper Scissor",
-    "slug": "rock-paper-scissor",
+    "name": "Rock Paper Scissors",
+    "slug": "rock-paper-scissors",
     "platforms": [
       "ios",
       "android",

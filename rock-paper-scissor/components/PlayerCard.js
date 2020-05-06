@@ -1,5 +1,6 @@
+// Author: Lauren Lofton
 import React from 'react';
-import {View,Text, Image,TouchableOpacity,StyleSheet} from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
  
 function PlayerCard (props){
     return(
@@ -14,7 +15,6 @@ function PlayerCard (props){
         </View>
     )      
 }
-
 
 const styles = StyleSheet.create({
    column:{

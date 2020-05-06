@@ -1,27 +1,21 @@
 // Author: Lauren Lofton
 import React from 'react';
-import { View, StyleSheet, ImageBackground } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 const Card = props => {
-
-  return <View style={{ ...styles.card, ...props.style}}>
-      <ImageBackground source={require('../assets/log.png')} style={{width: 330, height: 330, resizeMode: 'contain'}}>
-      <View style={{ ...styles.card, ...props.style }}>{props.children}</View>
-      </ImageBackground>
-  </View>
+    return <View style={{ ...styles.card, ...props.style }}>{props.children}</View>
 };
 
 const styles = StyleSheet.create ({
     card: {
-        
-        marginHorizontal: 10,
-        padding: 15,
-        alignItems: 'center',
+        shadowColor: 'black',
+        shadowOffset: {width: 0, height: 2},
+        shadowRadius: 3,
+        shadowOpacity: 1,
+        elevation: 2,
+        width: '100%'
+
     },
-    imageLog: {
-        marginTop: 70,
-        alignItems: 'center',
-    }
 });
 
 export default Card;
