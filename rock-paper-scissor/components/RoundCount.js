@@ -1,32 +1,26 @@
 // Author: Lauren Lofton
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Colors from '../constants/colors'
 
 function RoundCount(props) {
     return (
-        <View style={styles.RoundCount}>
-  
+        <View style={styles.roundCount}>
             <View style={styles.count}>
                 <View style={styles.menu} />
-
-          
                 <View style={styles.menu}>
                     <Text style={{  paddingTop: 23,  fontSize: 20, fontWeight: '200', color: 'black' }}>Round: {props.totalRound} </Text>
                     <Text style={{ fontSize: 18, fontWeight: '200', color: 'green' }}>Player Wins: {props.winRound} </Text>
-                    <Text style={{ fontSize: 18, fontWeight: '200', color: '#b00000' }}>Opponent Wins: {props.loseRound}</Text>
-                    <Text style={{ fontSize: 18, fontWeight: '200', color: '#0000db' }}>Tied Games: {props.tieRound} </Text>
+                    <Text style={{ fontSize: 18, fontWeight: '200', color: Colors.lose }}>Opponent Wins: {props.loseRound}</Text>
+                    <Text style={{ fontSize: 18, fontWeight: '200', color: Colors.primary }}>Tied Games: {props.tieRound} </Text>
                 </View>
-             
-         
             </View>
-        
         </View>
-        
     );
 }
 
 const styles = StyleSheet.create({
-    RoundCount: {
+    roundCount: {
         flex: 1,
         flexDirection: 'column',
         textAlign: 'center',
@@ -37,19 +31,11 @@ const styles = StyleSheet.create({
         flex: 2,
         flexDirection: 'row',
         justifyContent: 'space-evenly'
-
     },
     menu: {
         flex: 2,
         paddingLeft: 25,
         paddingTop: 45,
-    },
-    imageFrame: {
-        flex: 1,
-        width: '100%',
-        height: 150,
-        resizeMode: 'contain',
-        alignItems: 'center',      
     },
 });
 

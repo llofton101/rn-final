@@ -1,5 +1,4 @@
 // Author: Lauren Lofton
-
 const CHOICES = [
     {
       name: 'crowd',
@@ -19,6 +18,4 @@ const CHOICES = [
     },
 ];
     
-
-
 export {CHOICES};

@@ -10,7 +10,6 @@ const ChoiceCard = ({ choice: { uri }}) => {
           resizeMode="contain"
           style={styles.choiceImage} 
         />
-     
       </View>
     );
   };

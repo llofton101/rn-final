@@ -1,6 +1,7 @@
 // Author: Lauren Lofton
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
+import Colors from '../constants/colors';
 
 
 const Header = props => {
@@ -16,7 +17,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 90,
         paddingTop: 36,
-        backgroundColor: '#db0000',
+        backgroundColor: Colors.lose,
         alignItems: 'center',
         justifyContent: 'center',
         paddingBottom: 20,
@@ -24,10 +25,7 @@ const styles = StyleSheet.create({
     headerTitle: {
         color: 'white',
         fontSize: 30,
-     
-
     }
-
 });
 
 export default Header;

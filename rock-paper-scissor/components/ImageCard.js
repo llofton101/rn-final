@@ -13,7 +13,6 @@ const ImageCard = props => {
 
 const styles = StyleSheet.create ({
     card: {
-        
         marginHorizontal: 10,
         padding: 15,
         alignItems: 'center',

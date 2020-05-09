@@ -1,6 +1,7 @@
 // Author: Lauren Lofton
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
+import Colors from '../constants/colors'
 
 function GameStatus(props) {
     if (props.gamePrompt == 'You Won!') {
@@ -18,16 +19,15 @@ const styles = StyleSheet.create({
     textWin: {
         fontSize: 40,
         fontWeight: '300',
-        color: '#2bff47',
+        color: Colors.win,
         textShadowOffset: {width: 1, height: 1},
         textShadowColor: 'black',
-        textShadowRadius: 1,
-        
+        textShadowRadius: 1, 
     },
     textLose: {
         fontSize: 40,
         fontWeight: '300',
-        color: '#b80000',
+        color: Colors.lose,
         textShadowOffset: {width: 1, height: 1},
         textShadowColor: 'black',
         textShadowRadius: 1,
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     textTie: {
         fontSize: 40,
         fontWeight: '300',
-        color: '#0000db',
+        color: Colors.primary,
         textShadowOffset: {width: 1, height: 1},
         textShadowColor: 'black',
         textShadowRadius: 1,

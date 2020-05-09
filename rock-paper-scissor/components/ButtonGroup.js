@@ -9,18 +9,17 @@ function ButtonGroup(props) {
     return choices.map((item,index) => {
         return(
         <View style={styles.container} key={index}>
-        <TouchableOpacity
-        onPress={() => props.onPress(item.name)}>
-          
-            <View style={styles.imageWrapper}>
-                <Image style={styles.image} source={item.source}/>
-            </View>
-            <View style={styles.textWrapper}>
-                <Text style={styles.buttonText}>
-                {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
-                </Text>
-            </View>
-        </TouchableOpacity>
+            <TouchableOpacity
+            onPress={() => props.onPress(item.name)}>
+                <View style={styles.imageWrapper}>
+                    <Image style={styles.image} source={item.source}/>
+                </View>
+                <View style={styles.textWrapper}>
+                    <Text style={styles.buttonText}>
+                    {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
+                    </Text>
+                </View>
+            </TouchableOpacity>
         </View>
         )
     })

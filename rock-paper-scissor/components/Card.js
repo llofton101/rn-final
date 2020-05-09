@@ -13,8 +13,7 @@ const styles = StyleSheet.create ({
         shadowRadius: 3,
         shadowOpacity: 1,
         elevation: 2,
-        width: '100%'
-
+        width: '100%',
     },
 });
 

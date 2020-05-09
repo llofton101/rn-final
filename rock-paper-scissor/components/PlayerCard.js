@@ -7,7 +7,7 @@ function PlayerCard (props){
         <View style={styles.column}>
             <Text >{props.playerName}</Text>
             <Image
-               source={{ uri:  props.choice.uri}}
+                source={{ uri:  props.choice.uri}}
                 resizeMode="contain"
                 style={styles.choiceImage}
             />
